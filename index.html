@@ -28,16 +28,20 @@
 
     * { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      color: var(--ink);
-    background:
-radial-gradient(circle at top, rgba(59,130,246,.18), transparent 28rem),
-radial-gradient(circle at bottom right, rgba(139,92,246,.18), transparent 24rem),
-linear-gradient(180deg, #020617 0%, #07111f 45%, #0b1020 100%);
-    button, input, textarea, select { font: inherit; }
-    button { cursor: pointer; }
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  color: var(--ink);
+
+  background:
+    radial-gradient(circle at top, rgba(59,130,246,.18), transparent 30rem),
+    radial-gradient(circle at bottom right, rgba(139,92,246,.15), transparent 25rem),
+    radial-gradient(circle at left, rgba(34,211,238,.08), transparent 22rem),
+    linear-gradient(180deg, #020617 0%, #07111f 45%, #0b1020 100%);
+
+  min-height: 100vh;
+  letter-spacing: 0;
+}
 
     .app-shell {
       width: min(1180px, calc(100% - 28px));
